@@ -11,7 +11,8 @@ class MainActivity : AppCompatActivity() {
 //    lateinit var counterFragment:CounterFragment
 //    lateinit var counterShowFragment: CounterShowFragment
 
-    var counter = 0
+
+//    var counter = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,18 +20,22 @@ class MainActivity : AppCompatActivity() {
 //        counterFragment = fragment as CounterFragment
 //        counterShowFragment = fragment2 as CounterShowFragment
 
-        value.setText("" + counter)
-
-        plusButton.setOnClickListener {
-            value.setText("" + ++counter)
-        }
-
-        minusButton.setOnClickListener {
-            value.setText("" + --counter)
-        }
+        //versi 1
+//        value.setText("" + counter)
+//
+//        plusButton.setOnClickListener {
+//            value.setText("" + ++counter)
+//        }
+//
+//        minusButton.setOnClickListener {
+//            value.setText("" + --counter)
+//        }
     }
 
 
 //    fun increase(view: View) {}
 //    fun decrease(view: View) {}
+    fun sendData(passData: String) {
+    value.text = passData
+    }
 }
